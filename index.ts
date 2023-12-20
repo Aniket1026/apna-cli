@@ -1,8 +1,10 @@
 import { Command } from 'commander';
 import { mkdirCommand } from './src/commands/mkdir.ts';
+import { lsCommand } from './src/commands/ls.ts';
 
 const program = new Command();
 mkdirCommand(program);
+lsCommand(program);
 
 program.parse();
 
